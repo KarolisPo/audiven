@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/uzsakymas.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiven</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html" class="nav-logo"><img class="nav-logo-img" src="images/logo.png"></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="apie.html" class="nav-link">APIE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="apvalus.html" class="nav-link">APVALUS DIFUZORIUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kvadratinis.html" class="nav-link">KVADRATINIS DIFUZORIUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galerija.html" class="nav-link">GALERIJA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" onclick="scrollDown()" class="nav-link">KONTAKTAI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="uzsakymas.html" class="nav-link">UŽSAKYTI</a>
+                    </li>
+                </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+</header>
+
+<div class="container">
+    <center>
+        <div class="title">
+            <p>UŽSAKYMO FORMA</p>
+        </div>
+    </center>
+    <img  class="curv-img-top" src="images/curved.png">
+    <img  class="curv-img-bot"src="images/curved-bot.png">
+</div>
+
+<form  class="form" action="email.php" method="post">
+    <div class="line-wraper-form">
+        <div class="info-label-form">
+            <label class="name">Vardas</label>
+        </div>
+        <div class="info-input-form">
+            <input class="user-data" type="text" id="fname" name="vardas" placeholder="Jūsų vardas" required>
+        </div>
+    </div>
+    <div class="line-wraper-form">
+        <div class="info-label-form">
+            <label class="name">Pavardė</label>
+        </div>
+        <div class="info-input-form">
+            <input class="user-data" type="text" id="lname" name="pavarde" placeholder="Jūsų pavardė" >
+        </div>
+    </div>
+    <div class="line-wraper-form">
+        <div class="info-label-form">
+            <label class="name">El.Paštas</label>
+        </div>
+        <div class="info-input-form">
+            <input  class="user-data" type="text" id="email" name="email" required placeholder="Jūsų el.paštas">
+        </div>
+    </div>
+    <div class="line-wraper-form">
+        <div class="info-label-form">
+            <label class="name">Tel.Nr</label>
+        </div>
+        <div class="info-input-form">
+            <input class="user-data" type="text" id="phnum" name="telefonas" required placeholder="Jūsų telefono numeris">
+        </div>
+    </div>
+
+    <div class="line-wraper-form">
+        <div class="info-label-form">
+            <label class="name">Miestas</label>
+        </div>
+        <div class="info-input-form">
+            <input class="user-data" type="text" id="miestas" name="miestas" placeholder="Pristatymo miestas" required>
+        </div>
+    </div>
+
+
+<div class="order-wrap">
+
+    <div class="order-box">
+        <div class="image-box-title">
+            Apvalus difuzorius
+        </div>
+        <div class="image-box">
+            <img class="apvalus-img" src="images/apvalus.png">
+        </div>
+        <div class="input-box">
+            <div class="difuzor-name">
+                <label>Apvalus difuzorius Ø100:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input class="apvalus-input" type="text" id="apvalus100" name="apvalus100" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+            <div class="difuzor-name">
+                <label>Apvalus difuzorius Ø125:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input  class="apvalus-input" type="text" id="apvalus125" name="apvalus125" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+            <div class="difuzor-name">
+                <label>Apvalus difuzorius Ø160:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input  class="apvalus-input" type="text" id="apvalus160" name="apvalus160" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div class="order-box">
+        <div class="image-box-title">
+            Kvadratinis difuzorius
+        </div>
+        <div class="image-box">
+            <img class="apvalus-img" src="images/kvadratinis_no_background.png">
+        </div>
+        <div class="input-box">
+            <div class="difuzor-name">
+                <label>Kvadratinis difuzorius Ø100:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input class="kvadratinis-input" type="text" id="kvadratinis100" name="kvadratinis100" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+            <div class="difuzor-name">
+                <label>Kvadratinis difuzorius Ø125:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input class="kvadratinis-input"  type="text" id="kvadratinis125" name="kvadratinis125" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+            <div class="difuzor-name">
+                <label>Kvadratinis difuzorius Ø160:</label>
+            </div>
+            <div class="apvalus-input-wrap">
+                <input class="kvadratinis-input"  type="text" id="kvadratinis160" name="kvadratinis160" oninput="finalPrice()" type="text" maxlength="3" size="3" placeholder="Įveskite kiekį">
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="price-wrap">
+    <span class="bendra-suma-span">Bendra suma:</span><span class="euro-span">&euro;<span class="price-span">00</span></span>
+</div>
+<button class="uzsakyti-btn"> UŽSAKYTI</button>
+</form>
+  <div class="footer">
+    <div class="left-footer-box">
+        <img class="footer-logo" src="images/logo.png">
+    </div>
+    <div class="center-footer-box">
+        <div class="contact-wrap">
+            <span style="font-weight: 500; font-size: 25px;">Telefonas</span><br>
+            <span style="font-size: 16px;"><a href="tel:+37067821287">+37067821287</a></span> <br><br>
+            <span style="font-weight: 500; font-size: 25px;">El. paštas</span><br>
+            <span style="font-size: 16px;"><a href="mailto:info@audiven.lt">info@audiven.lt</a></span> <br><br>
+            <span style="font-weight: 500; font-size: 25px;">Darbo laikas</span><br>
+            <span style="font-size: 16px;">Pirmadienis - Sekmadienis</span> <br>
+            <span style="font-size: 16px;">9:00 - 18:00</span><br><br>
+
+            <span class="adress-wrap-left" style="font-weight: 500; font-size: 25px;">Adresas</span><br>
+            <span class="adress-wrap-left" style="font-size: 16px;">Vilniaus g. 90, LT-33116 Molėtai</span>
+        </div>
+    </div>
+    <div class="right-footer-box">
+        <div class="adress-wrap">
+            <span style="font-weight: 500; font-size: 25px;">Adresas</span><br>
+            <span style="font-size: 16px;">Vilniaus g. 90, LT-33116 Molėtai</span>
+        </div>
+        <div class="map-wrap">
+            <iframe src="https://maps.google.com/maps?q=vilniaus%20g%2090%20moletai&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="185" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="script/index.js"></script>
+<script src="script/galerija.js"></script>
+<script src="script/kontaktai.js"></script>
+<script src="script/uzsakymas.js"></script>
+</body>
+</html>
